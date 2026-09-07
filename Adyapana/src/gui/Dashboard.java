@@ -23,14 +23,11 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     private void setDateTime() {
-        // Create a timer to update the label every second
         Timer timer = new Timer(1000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Format the current date and time
                 SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd  HH:mm:ss ");
                 Date date = new Date();
-                // Set the formatted date to jLabel1
                 lbldate.setText(formatter.format(date));
             }
         });
@@ -305,8 +302,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLogOutActionPerformed
 
     private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
-//        StudentManagement stumanage = new StudentManagement();
-//        stumanage.setVisible(true);
+        StudentManagement stumanage = new StudentManagement();
+        stumanage.setVisible(true);
     }//GEN-LAST:event_btnStudentActionPerformed
 
     private void btnTracherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTracherActionPerformed
