@@ -305,8 +305,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLogOutActionPerformed
 
     private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
-//        StudentManagement stumanage = new StudentManagement();
-//        stumanage.setVisible(true);
+        StudentManagement stumanage = new StudentManagement();
+        stumanage.setVisible(true);
     }//GEN-LAST:event_btnStudentActionPerformed
 
     private void btnTracherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTracherActionPerformed
