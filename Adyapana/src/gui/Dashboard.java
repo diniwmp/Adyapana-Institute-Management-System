@@ -316,8 +316,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnTracherActionPerformed
 
     private void btnClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClassActionPerformed
-//        ClassManagement classManagement = new ClassManagement();
-//        classManagement.setVisible(true);
+        ClassManagement classManagement = new ClassManagement();
+        classManagement.setVisible(true);
     }//GEN-LAST:event_btnClassActionPerformed
 
 
