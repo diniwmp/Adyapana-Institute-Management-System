@@ -287,8 +287,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPaymentActionPerformed
 
     private void btnSubjectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubjectActionPerformed
-//        SubjectManagement subjectManagement = new SubjectManagement();
-//        subjectManagement.setVisible(true);
+        SubjectManagement subjectManagement = new SubjectManagement();
+        subjectManagement.setVisible(true);
     }//GEN-LAST:event_btnSubjectActionPerformed
 
     private void btnLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutActionPerformed
