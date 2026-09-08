@@ -426,15 +426,15 @@ public class Attendance extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         String name = txtSearch.getText();
-        loadAttendanceTable("SELECT `attendance`.`id` AS `id`,"
-                + "`attendance`.`maked_at` AS `date`,"
-                + "`students`.`name`AS `name`,"
-                + "`classes`.`title` AS `class`,"
-                + "`attendance_status`.`status` AS `status` "
-                + "FROM `attendance`"
-                + " INNER JOIN `students` ON `attendance`.`students_s_no` = `students`.`s_no` "
-                + "INNER JOIN `classes` ON `attendance`.`classes_class_no` = `classes`.`class_no`"
-                + "INNER JOIN `attendance_status` ON `attendance`.`attendance_status_id` = `attendance_status`.`id` WHERE `name` LIKE '" + name + "'");
+            loadAttendanceTable("SELECT `attendance`.`id` AS `id`,"
+            + "`attendance`.`maked_at` AS `date`,"
+            + "`students`.`name`AS `name`,"
+            + "`classes`.`title` AS `class`,"
+            + "`attendance_status`.`status` AS `status` "
+            + "FROM `attendance`"
+            + " INNER JOIN `students` ON `attendance`.`students_s_no` = `students`.`s_no` "
+            + "INNER JOIN `classes` ON `attendance`.`classes_class_no` = `classes`.`class_no`"
+            + "INNER JOIN `attendance_status` ON `attendance`.`attendance_status_id` = `attendance_status`.`id` WHERE `students`.`name` LIKE '%" + name + "%'");
 
     }//GEN-LAST:event_txtSearchKeyReleased
 
@@ -443,15 +443,15 @@ public class Attendance extends javax.swing.JFrame {
 
     private void txtStatusKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtStatusKeyReleased
         String status = txtStatus.getText();
-        loadAttendanceTable("SELECT `attendance`.`id` AS `id`,"
-                + "`attendance`.`maked_at` AS `date`,"
-                + "`students`.`name`AS `name`,"
-                + "`classes`.`title` AS `class`,"
-                + "`attendance_status`.`status` AS `status` "
-                + "FROM `attendance`"
-                + " INNER JOIN `students` ON `attendance`.`students_s_no` = `students`.`s_no` "
-                + "INNER JOIN `classes` ON `attendance`.`classes_class_no` = `classes`.`class_no`"
-                + "INNER JOIN `attendance_status` ON `attendance`.`attendance_status_id` = `attendance_status`.`id` WHERE `name` LIKE '" + status + "'");
+       loadAttendanceTable("SELECT `attendance`.`id` AS `id`,"
+            + "`attendance`.`maked_at` AS `date`,"
+            + "`students`.`name`AS `name`,"
+            + "`classes`.`title` AS `class`,"
+            + "`attendance_status`.`status` AS `status` "
+            + "FROM `attendance`"
+            + " INNER JOIN `students` ON `attendance`.`students_s_no` = `students`.`s_no` "
+            + "INNER JOIN `classes` ON `attendance`.`classes_class_no` = `classes`.`class_no`"
+            + "INNER JOIN `attendance_status` ON `attendance`.`attendance_status_id` = `attendance_status`.`id` WHERE `attendance_status`.`status` LIKE '%" + status + "%'");
 
     }//GEN-LAST:event_txtStatusKeyReleased
 
